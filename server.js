@@ -30,6 +30,6 @@ app.use((req, res) => {
   res.status(404).render(createPath("error"));
 });
 
-app.listen(PORT, () => {
-  console.log(`Server has been started on Port 3000...`);
+app.listen(process.env.PORT, () => {
+  console.log(`Server has been started on Port ${process.env.PORT}...`);
 });
