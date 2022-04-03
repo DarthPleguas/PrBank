@@ -1,6 +1,5 @@
 let express = require("express");
 let app = express();
-//let PORT = process.env.PORT || 3000;
 let path = require("path");
 let mongoose = require("mongoose");
 require("dotenv").config();
@@ -9,8 +8,6 @@ let bankRouter = require("./routers/bankRouters");
 let apiBankRouter = require("./routers/api-bankRouters");
 
 let createPath = (page) => path.join(__dirname, "views", `${page}.ejs`);
-
-//let db = `mongodb+srv://Roman:Roman4321@cluster0.xy7fk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 
 mongoose
   .connect(process.env.MONGO_URL)
