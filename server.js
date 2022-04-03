@@ -1,6 +1,6 @@
 let express = require("express");
 let app = express();
-let PORT = process.env.PORT||7777;
+let PORT = process.env.PORT || 80;
 let path = require("path");
 let mongoose = require("mongoose");
 require("dotenv").config();
