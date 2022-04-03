@@ -1,6 +1,6 @@
 let express = require("express");
 let app = express();
-let PORT = 3000;
+let PORT = process.env.PORT || 3000;
 let path = require("path");
 let mongoose = require("mongoose");
 require("dotenv").config();
